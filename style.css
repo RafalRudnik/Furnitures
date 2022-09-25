@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+}
+
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Noto Serif', serif;*/
+
+
+body {
+    width: 100%;
+    max-height: 100vh;
+    background-color: #ECF2F1;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+button {
+    color: white;
+    background-color: #426868;
+    border-radius: 30px;
+    width: 166px;
+    height: 48px;
+    border: none;
+    transition: 0.5s, color 0.5s; 
+}
+
+button:hover {
+    opacity: 90%;
+    filter: drop-shadow(0px 4px 4px rgba(17, 34, 15, 0.7));
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+    
+}
+
+
+/* ========================================= HEADER ======================================*/
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    color: #151E1D;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav li {
+    margin-inline: 40px;
+    margin-right: 0px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #151E1D;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s, color 0.5s;
+}
+
+.nav li a:hover {
+    filter: drop-shadow(0px 4px 4px rgba(167, 248, 156, 0.7));
+    font-size: 20px;
+}
+
+.nav li a:focus {
+    outline: none;
+}
+
+/*========================================= MainSection ===============================*/
+
+.empty {
+    width: 1060px;
+    min-height: 106px;
+}
+
+.MainSection {
+    max-width: 1060px;
+    margin: auto;
+    min-height: 739px;
+    margin-top: 40px;
+    background-color: #ECF2F1;
+    display: flex;
+}
+
+h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 56px;
+    color: #151E1D;
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+.p1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: #151E1D;
+}
+
+.p2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #151E1D;
+    margin-top: -40px;
+}
+
+.MainTxt {
+    padding-left: 90px;
+    padding-top: 100px;
+   
+}
+
+.MainTxt img {
+    width: 180px;
+    height: 238px;
+    margin-top: 133px;
+}
+
+.MainTxtImg {
+    width: 540px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.MainImg img {
+    margin-left: 25px;
+    width: 180px;
+    height: 404px;
+}
+
+.MainImg {
+    display: flex;
+}
+
+.MainImg1 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.MainImg2 {
+    display: flex;
+    align-items: center;
+}
+
+/*================================= WeCraete =============================*/
+
+.WeCreate {
+    max-width: 1060px;
+    min-height: 500px;
+    margin-top: 100px;
+    background-color: #ECF2F1;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h3 {
+    font-family: 'Noto Serif', serif;
+    font-size: 32px;
+    color: #151E1D;
+    font-weight: bold;
+    padding-bottom: 30px;
+    
+}
+
+.WeTxt {
+    margin-left: 90px;
+    margin-top: 100px;
+    width: 50%;
+}
+
+h4 {
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    color: #151E1D;
+    font-weight: bold;
+}
+
+h4 img {
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+}
+
+.WeList ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.WeList ul li {
+    width: 45%;
+}
+
+
+.WeList ul li p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding-left: 31px;
+}
+
+/*============================== GALERY ==================================*/
+
+.gallery1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.gallery1 img {
+    margin: 10px;
+}
+
+.gallery1-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery2 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.gallery2 img {
+    margin: 10px;
+}
+
+
+/*=========================== MOBILE ============================== */
+
+@media screen and (max-width: 750px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    .nav li {
+        margin-inline: 20px;
+    }
+
+    .MainSection {
+        flex-direction: column;
+        justify-content:center;
+        margin: auto;
+    }
+
+    .WeCreate {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .WeTxt {
+        width: 100%;
+        margin: auto;
+    }
+
+}
